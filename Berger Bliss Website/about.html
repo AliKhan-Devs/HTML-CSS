@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurgerBliss | About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://png.pngtree.com/png-vector/20230520/ourmid/pngtree-burger-logo-vector-png-image_7103972.png" alt="">
+            
+            BurgerBliss
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <h1>Our Story</h1>
+        <div class="shape-divider"></div>
+    </section>
+
+    <section class="about-content">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>A Legacy of Taste</h2>
+                <p>Founded in 1970, BurgerBliss has been serving the finest burgers in town for over five decades. Our
+                    commitment to quality and taste has made us a beloved destination for burger enthusiasts.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1512152272829-e3139592d56f?w=500" alt="Restaurant Interior"
+                class="about-image">
+        </div>
+
+        <div class="about-grid reverse">
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=500" alt="Kitchen"
+                class="about-image">
+            <div class="about-text">
+                <h2>Our Philosophy</h2>
+                <p>We believe in using only the finest ingredients, sourced from local suppliers. Every burger is
+                    crafted with care and attention to detail, ensuring a perfect blend of flavors in every bite.</p>
+            </div>
+        </div>
+    
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Our Secret Recipe</h2>
+                <p>Our secret recipe has been perfected over the years, blending unique spices and flavors to create the ultimate burger experience. Each ingredient is carefully selected to ensure the highest quality.</p>
+            </div>
+            <img src="https://www.shutterstock.com/image-photo/big-tasty-burger-on-wooden-600nw-1571555578.jpg" alt="Restaurant Interior"
+                class="about-image">
+        </div>
+
+        <div class="about-grid reverse">
+            <img src="https://www.upmenu.com/wp-content/uploads/2021/07/8-restaurant-event-ideas-example-family-deals.jpg" alt="Kitchen"
+                class="about-image">
+            <div class="about-text">
+                <h2>Specials and Events</h2>
+                <p><p>Join us for our special events and promotions. From burger festivals to happy hours, there's always something exciting happening at BurgerBliss.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <footer>
+        <div class="footer-shape-top"></div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BurgerBliss</h3>
+                <p>Serving happiness since 1970</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📞 (555) 123-4567</p>
+                <p>📧 info@burgerbliss.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Mon-Fri: 11am - 10pm</p>
+                <p>Sat-Sun: 12pm - 11pm</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BurgerBliss. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('about-text')) {
+                        entry.target.classList.add('animate-left');
+                    } else if (entry.target.classList.contains('about-image')) {
+                        entry.target.classList.add('animate-right');
+                    } else {
+                        return;
+                    }
+                    // To re-trigger the animation, remove class and re-add
+                    observer.unobserve(entry.target);
+                    observer.observe(entry.target);
+                } else {
+                    entry.target.classList.remove('animate-left', 'animate-right');
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        const scrollElements = document.querySelectorAll('.about-text, .about-image');
+        scrollElements.forEach(el => {
+            observer.observe(el);
+        });
+    });
+</script>

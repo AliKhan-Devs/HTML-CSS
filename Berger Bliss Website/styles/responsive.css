@@ -1,0 +1,39 @@
+.navbar .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  height: 70px;
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 80px;
+  }
+
+  .floating-burger {
+    width: 300px;
+    margin-top: 2rem;
+  }
+.navbar{
+  display: flex;
+  flex-direction: column;
+}
+
+  .nav-links {
+    gap: 1rem;
+    
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

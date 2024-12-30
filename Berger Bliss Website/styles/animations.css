@@ -1,0 +1,38 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes waveEffect {
+  0%, 100% {
+    clip-path: polygon(0% 60%, 20% 40%, 40% 60%, 60% 40%, 80% 60%, 100% 40%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0% 40%, 20% 60%, 40% 40%, 60% 60%, 80% 40%, 100% 60%, 100% 100%, 0% 100%);
+  }
+}
+
+.animate-text {
+  animation: fadeInUp 1s ease;
+}
+
+.animate-text-delay {
+  animation: fadeInUp 1s ease 0.3s forwards;
+  opacity: 0;
+}
+
+.shape-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: var(--background-color);
+  animation: waveEffect 10s linear infinite;
+}

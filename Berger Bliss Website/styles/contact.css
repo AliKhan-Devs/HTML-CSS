@@ -1,0 +1,63 @@
+.contact-hero {
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('https://images.unsplash.com/photo-1542574271-7f3b92e6c821?w=1920') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+.contact-content {
+  padding: 5rem 10%;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+}
+
+.contact-info {
+  background: var(--dark-color);
+  padding: 2rem;
+  border-radius: 15px;
+  color: var(--background-color);
+}
+
+.info-item {
+  margin-bottom: 2rem;
+}
+
+.info-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.contact-form {
+  background: var(--dark-color);
+  padding: 2rem;
+  border-radius: 15px;
+  color: var(--background-color);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--background-color);
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: none;
+}

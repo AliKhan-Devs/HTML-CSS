@@ -1,0 +1,35 @@
+footer {
+  background-color: var(--dark-color);
+  color: var(--background-color);
+  position: relative;
+  padding: 4rem 10% 2rem;
+  margin-top: 30px;
+}
+
+.footer-shape-top {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: var(--dark-color);
+  clip-path: polygon(0 50%, 50% 0, 100% 50%, 100% 100%, 0 100%);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,29 @@
+/* Button Styles */
+.buy-button {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+  color: white;
+  padding: 0.85rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: auto;
+  min-width: 160px;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
+}
+
+.buy-button:hover {
+  background: linear-gradient(135deg, var(--primary-hover), var(--primary));
+  box-shadow: 0 6px 16px rgba(124, 58, 237, 0.35);
+  transform: translateY(-1px);
+}
+
+.browse-button {
+  composes: buy-button;
+  width: auto;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}

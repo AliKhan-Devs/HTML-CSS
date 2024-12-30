@@ -1,0 +1,98 @@
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.about-hero {
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1920') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero h1 {
+  color: var(--primary-color);
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.about-content {
+  padding: 5rem 10%;
+  background: var(--background-color);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.about-text,
+.about-image {
+  opacity: 0;
+  transform: translateX(0);
+}
+
+.about-text.animate-left {
+  animation: slideInFromLeft 0.5s ease forwards;
+}
+
+.about-image.animate-right {
+  animation: slideInFromRight 0.5s ease forwards;
+}
+
+.about-text.animate-right {
+  animation: slideInFromRight 0.5s ease forwards;
+}
+
+.about-image.animate-left {
+  animation: slideInFromLeft 0.5s ease forwards;
+}
+
+.about-text h2 {
+  color: var(--dark-color);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
