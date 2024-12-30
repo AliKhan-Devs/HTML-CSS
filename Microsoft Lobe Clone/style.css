@@ -1,0 +1,349 @@
+body{
+    scroll-behavior: smooth;
+    width: 100%;
+}
+.header{
+    display: flex;
+    width: 100%;
+    margin-top: -1rem;
+    padding: 0%;
+    left: 0%;
+    right: 0%;
+    justify-content: center;
+    gap: 15rem;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    background-color: #F2F3F5;
+    z-index: 3;
+}
+
+.logo{
+    display: flex;
+}
+.logo a img{
+    height: 4rem;
+}
+
+
+.navlinks{
+    display: flex;
+}
+.navlinks ul{
+    display: flex;
+    gap: 2rem;
+}
+ul li{
+    list-style: none;
+   
+}
+.navlinks ul li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(114, 110, 110);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.navlinks ul li a:hover{
+    transform: scale(1.2);
+    color:black
+ }
+ 
+
+
+
+.downloadbtn button{
+    
+    background-color: #04ddb2;
+    border-radius: 20px;
+    border-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.downloadbtn button:hover{
+    transform: scale(1.2);
+}
+.overviewdetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overviewlines{
+    margin-top: -2rem;
+    font-size: 3rem;
+    text-align: center;
+    transform: 0.5s ease;
+    cursor: pointer; 
+}
+.overviewlines p{
+    font-size: 35px;
+}
+.overviewlines span{
+    color: #04ddb2;
+}
+.overviewlines button{
+    font-size: 2rem;
+   border-radius: 20px;
+   border-color: transparent;
+   background-color: #04ddb2;
+   color: white;
+   cursor: pointer;
+   transition: 0.3s ease;
+}
+.overviewlines button:hover{
+    transform: scale(1.2);
+}
+.overviewlines .watchlater{
+    background-color: transparent;
+    color:#04ddb2;
+    cursor: pointer;
+}
+.overviewvideo{
+    margin-top: 0rem;
+}
+
+.details{
+    background-color: #F2F3F5;
+}
+
+.machinelearning{
+    justify-content: center;
+}
+.machinelearning .heading{
+    margin-left: 10rem;
+    width: 50%;
+}
+.machinelearning h1{
+    font-size: 3rem;
+}
+.machinelearning span{
+    color: #04ddb2;
+}
+.machinelearning p{
+    justify-content: left;
+    font-size: 2rem;
+}
+.machinelearning img{
+    width: 80rem;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+.icons img{
+    height:70px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.icons h3{
+    color:rgb(114, 110, 110); ;
+    cursor: pointer;
+}
+.icons h2{
+    cursor: pointer;
+}
+.icon1{
+    width: 15rem;
+    height:15rem;
+    border-radius: 20px;
+}
+
+.icon2{
+    width: 15rem;
+    height:15rem;
+    border-radius: 20px;
+}
+.icon3{
+    width: 15rem;
+    height:15rem;
+    border-radius: 20px;
+}
+
+.projectintro{
+    margin-left: 10rem;
+    width: 60%;
+}
+.projectintro h1{
+    font-size: 3rem;
+}
+.projectintro h1 span{
+    color: #04ddb2;
+}
+.projectintro p{
+    font-size: 2rem;
+}
+
+.projectscontainer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #F2F3F5;
+    gap: 6rem
+    ;
+}
+.projectscontainer img{
+    height: 130px;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 23rem;
+    width: 20rem;
+    background-color: white;
+    border-radius: 20px;
+}
+.container1 p{
+    font-size: 1.4rem;
+}
+ .btn1 button{
+    font-size: 1.5rem;
+    border-radius: 20px;
+    background-color: #04ddb2;
+    border-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 23rem;
+    width: 20rem;
+    background-color: white;
+    border-radius: 20px;
+}
+.container2 p{
+    font-size: 1.4rem;
+}
+.btn2 button{
+    font-size: 1.5rem;
+    border-radius: 20px;
+    background-color:#F2F3F5;
+    border-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 23rem;
+    width: 20rem;
+    background-color: white;
+    border-radius: 20px;
+}
+.container3 p{
+    font-size: 1.4rem;
+}
+.btn3 button{
+    font-size: 1.5rem;
+    border-radius: 20px;
+    background-color:#F2F3F5;
+    border-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.train{
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+.train button{
+    font-size: 2rem;
+    border-radius: 20px;
+    background-color: #04ddb2;
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.train button:hover{
+    transform: scale(1.2);
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+.footer ul li{
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer ul li a{
+    text-decoration: none;
+    color:rgb(114, 110, 110);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.footer ul li:hover{
+    transform: scale(1.2);
+}
+
+.footer .lobe img{
+    height: 4rem;
+
+    cursor: pointer;
+}
+.lobe ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.lobe ul li{
+    list-style: none;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.about ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.general ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.resources ul{
+    display: flex;
+    flex-direction: column;
+    flex-direction: 2rem;
+    gap: 2rem;
+}
+
+.contacticons{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.twitter{
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.facebook{
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.youtube{
+    border-radius: 50%;
+    cursor: pointer;
+}

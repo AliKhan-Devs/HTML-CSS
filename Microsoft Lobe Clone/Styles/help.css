@@ -1,0 +1,97 @@
+.Help{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 1;
+    
+}
+.Help span{
+    color: #04ddb2;
+}
+.helpcontainer{
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   margin-top: 9rem;
+}
+.helplinks{
+    display: flex;
+    justify-content: center;
+}
+
+.helplinks ul{
+    display: flex;
+    gap: 7rem;
+}
+
+.helplinks ul li button{
+    width: 8rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    background-color: #04ddb2;
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.labhelpingsections{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-left: 3rem;
+}
+.labhelpingsections img{
+    border-radius: 20px;
+    margin-left: 16rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.labhelpingsections img:hover{
+    transform: scale(1.02);
+}
+.labhelpingsections video{
+    margin-left: 16rem;
+}
+
+
+
+.welcome{
+    width: 34rem;
+    text-align: left;
+}
+.welcome h1{
+    font-size: 2.3rem;
+}
+.welcome p{
+    font-size: 1.5rem;
+}
+
+
+.label{
+    width: 40rem;
+    text-align: left;
+}
+.label h1{
+    font-size: 2.3rem;
+}
+.label p{
+    font-size: 1.5rem;
+}
+
+.training{
+    width: 40rem;
+    text-align: left;
+}
+.training h1{
+    font-size: 2.3rem;
+}
+.training p{
+    font-size: 1.5rem;
+}

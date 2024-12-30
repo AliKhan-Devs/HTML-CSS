@@ -1,0 +1,96 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(https://qph.cf2.quoracdn.net/main-qimg-0983f52d0c3848dcfd94cb8564a85c28-pjlq);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* Logo */
+
+.logo{
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+
+.logo img{
+    width: 150px;
+    height: 80px;
+}
+
+/* navlinks */
+
+.navelinks{
+    display: block;
+    width: 45%;
+    margin: 10px auto;
+}
+
+.navebar{
+    display: inline-block;
+}
+.navebar li{
+    display: inline-block;
+    padding: 5px 10px;
+}
+.navebar li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navebar li a:hover , .navebar li a.active{
+    color: grey;
+    text-decoration: underline;
+}
+
+/* Buttons */
+.buttons{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    display: inline-block;
+}
+.btn{
+    padding: 8px 15px;
+    margin: 0px 15px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: none;
+    border: 2px solid white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Container */
+
+.container{
+    border: 2px solid white;
+    margin: 90px 65px;
+    width: 25%;
+    padding: 44px 44px;
+    border-radius: 18px;
+    text-align: center;
+}
+.lgoin_content input{
+    padding: 6px 60px;
+    margin: 12px auto;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Submit button */
+.container button{
+    margin: 6px auto;
+    padding: 6px 130px;
+}
+.container button:hover{
+    background-color: transparent;
+}
