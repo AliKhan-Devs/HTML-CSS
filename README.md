@@ -14,7 +14,7 @@ Welcome to my HTML & CSS project repository! This repository contains a collecti
 ## Installation
 To run these projects locally, follow these steps:
 1. Clone the repository:
-   git clone https://github.com/AliKhan-Devs/html-css-projects.git
+   git clone https://github.com/AliKhan-Devs/html-css.git
 2. Navigate to the project directory:
    cd html-css-projects
 3. Open the index.html file in your browser to view the project.
